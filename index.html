@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Skill Insight Platform Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">SI</div>
+        <div>
+          <strong>Skill Insight</strong>
+          <span>Teams Demo</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="member">구성원</button>
+        <button class="nav-item" data-view="leader">직책자</button>
+        <button class="nav-item" data-view="hr">HR</button>
+        <button class="nav-item" data-view="org">조직 효과</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="eyebrow">Demo Scope</p>
+        <h3>ERP 기반 직무·스킬셋 인사이트</h3>
+        <p>AI 기능 없이 정적 데이터로 실제 사용 흐름을 보여주는 GitHub Pages용 데모입니다.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AI Skill Insight Platform</p>
+          <h1>역량 데이터를 “조회”가 아니라 “이해”로 바꾸는 Teams형 데모</h1>
+          <p class="hero-copy">
+            구성원은 자신의 역할과 역량 흐름을 이해하고, 직책자와 HR은 팀 역량 구조와 역할 적합성을 파악할 수 있습니다.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <span>권한 정책</span>
+          <strong>구성원은 본인 정보만</strong>
+          <p>리더는 팀 단위, HR은 조직 통계 중심으로 제공됩니다.</p>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="view-panel">
+          <div class="view-header">
+            <div>
+              <p class="eyebrow" id="viewRole">구성원 View</p>
+              <h2 id="viewTitle">내 역할 기반 역량 인사이트</h2>
+            </div>
+            <span class="badge" id="viewBadge">본인 정보만 조회</span>
+          </div>
+
+          <div class="cards" id="cards"></div>
+        </div>
+
+        <div class="chat-panel">
+          <div class="chat-header">
+            <div class="bot-avatar">AI</div>
+            <div>
+              <strong>Skill Insight Assistant</strong>
+              <span id="chatMode">구성원용 인사이트</span>
+            </div>
+          </div>
+
+          <div class="quick-prompts" id="prompts"></div>
+          <div class="chat-window" id="chatWindow"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
